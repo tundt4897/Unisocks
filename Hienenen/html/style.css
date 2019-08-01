@@ -1,0 +1,384 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 19, 2019, 1:29:10 PM
+    Author     : Admin
+*/
+body{
+    text-align: center;
+    font-family: Adobe Devanagari;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+h3{
+    font-family: Adobe Devanagari;
+}
+.product{
+    opacity: 0.9;
+    box-shadow: 0px 0px 10px rgba(50, 50, 50, 0.5);
+    border-radius: 3px;
+	font-family: Adobe Devanagari;
+	
+}
+.head{
+    background-image: url('image/background.png');    
+
+}
+.navbar {
+    overflow: hidden;
+    color: black;
+    font: sans-serif;
+
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+    width: 16.667%;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: black;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    
+    border-radius: 15px;
+    color: #fff;
+    background-color: #7fba00;
+    border-color: #1e7e34;
+
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ddd;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 15px;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+
+.mySlides {    
+    display:none;
+}
+
+
+
+.footer{
+          
+    text-align: left;    
+}
+.footer a{
+    color: #999999;
+    text-decoration: none;
+}
+.footer a:hover{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color:#e8b80c ;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+#myBtn:hover {
+    background-color: #555;
+}
+
+
+
+
+
+.btn {
+    height: 80px;
+    width: 200px;
+    display: inline-block;
+    font-weight: 500;
+    color: #626677;
+    text-align: center;
+    vertical-align: middle;
+	font-family: social gothic;
+	
+    background-color: transparent;
+    border: 1px solid #cccccc;
+    font-size: 25px;
+    border-radius: 3px;
+    transition: color 0.15s ease-in-out;
+	background-color: 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btn-black {
+    background: #333333;
+    color: white;
+	font-size: 30px;
+	font-family: social gothic;
+	width: 500px;
+	height: 100px;
+	margin-left: 1320px;
+	margin-top: 50px;
+}
+
+.btn:hover {
+    color: #fff;
+    background-color: #2193D2;
+}
+
+.row1{
+	width: 100%;
+	height: 100px;
+	margin-left: 900px;
+	margin-top: 50px;
+}
+
+.row{
+	padding-top: 50px;
+	width: 80%;
+}
+
+.row:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"] {
+    float: left;  
+}
+
+
+[class*="col-offset"] {
+    float: left;  
+}
+
+
+
+
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 30%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+
+.container {
+  position: relative;
+	font-family: Social Gothic;
+	font-size: 80px;
+	color: white;
+	width: 100%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.middle p 
+{
+	color: white;
+}
+.container:hover .product {
+  opacity: 0.7;
+}
+
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  width: 33%;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+.icon-container{
+    
+    display: inline-block;
+    opacity: 1;
+    border-radius: 70%;
+    width: 40%;
+    margin: 3%;
+}
+
+.icon-img{
+    margin: 4%;
+    width: 50%;
+    height: 50%;    
+}
+
+
+.container-q {
+  position: relative;
+  text-align: center;
+
+}
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+.tenhang {
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+	font-family: Social Gothic;
+	color: #626677;
+	width: 100%;
+	float: left;
+}
+
+.col-offset-1{
+	width: 300px;
+	height: 500px;
+	box-shadow: 1px 1px 1px 1px silver;
+	margin-bottom: 50px;
+	margin-left: 50px;
+}
+
+.col-offset-1:hover {
+	animation: bounce 1s forwards;
+}
+

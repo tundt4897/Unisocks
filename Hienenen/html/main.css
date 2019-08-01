@@ -1,0 +1,196 @@
+/* CSS Document */
+
+.all
+{
+	width: 2350px;
+	height: 3000px;
+	
+}
+.header
+{
+	width: 1920px;
+	height: 750px;
+	background-color: white;
+}
+.body
+{
+	width: 2350px;
+	height: 1600px;
+	
+}
+.hangdau
+{
+	width: 2350px;
+	height: 600px;
+	font-family: Adobe Devanagari;
+			
+}
+.slide1
+{ width: 900px;
+	height: 600px;
+}
+.btn1{
+	position: absolute;
+	top:70%;
+	left:30%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  color: black;
+  cursor: pointer;
+	width: 250px;
+	height: 100px;
+	font-family: social gothic;
+	color: white;
+	font-size: 30px;
+	background: rgba(0,0,0,0.50);
+	border-style: hidden;
+	
+}
+.btn1:hover{
+	background-color:#64DDDC;
+	border: white;
+}
+
+.btn2 {
+  	position: absolute;
+	top:70%;
+	left:70%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  color: black;
+  cursor: pointer;
+	width: 250px;
+	height: 100px;
+	font-family: social gothic;
+	color: white;
+	font-size: 30px;
+	background: rgba(0,0,0,0.50);
+	border-style: hidden;
+}
+.btn2:hover{
+	background-color:#64DDDC;
+	border: white;
+}
+
+/* Green */
+.success {
+  border-color: #4CAF50;
+  color: green;
+}
+
+.success:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Blue */
+.info {
+  border-color: #2196F3;
+  color: dodgerblue;
+}
+
+.info:hover {
+  background: #2196F3;
+  color: white;
+}
+
+/* Orange */
+.warning {
+  border-color: #ff9800;
+  color: orange;
+}
+
+.warning:hover {
+  background: #ff9800;
+  color: white;
+}
+
+/* Red */
+.danger {
+  border-color: #f44336;
+  color: red;
+}
+
+.danger:hover {
+  background: #f44336;
+  color: white;
+}
+
+/* Gray */
+.default {
+  border-color: #e7e7e7;
+  color: black;
+}
+
+.default:hover {
+  background: #e7e7e7;
+}
+
+/*select*/
+/*the container must be positioned relative:*/
+.custom-select {
+  position: relative;
+  font-family: Social Gothic;
+	float: left;
+	padding: 5px;
+	font-size: 20px;
+}
+
+.custom-select select {
+  display: none; /*hide original SELECT element:*/
+	
+
+}
+
+.select-selected {
+		color: #FFFFFF;
+  background-color: #2196F3	;
+	border: 4px white;
+}
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0px;
+  height: 0px;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div,.select-selected {
+  color: #FFFFFF;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+  user-select: none;
+}
+
+/*style items (options):*/
+.select-items {
+  position: absolute;
+  background-color: #2196F3;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
